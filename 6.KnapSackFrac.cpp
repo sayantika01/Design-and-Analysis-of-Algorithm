@@ -49,7 +49,6 @@ double fractionalKnapsack(Item items[], int n, int capacity)
         cout << "Item " << i + 1 << ": Value = " << items[i].value << ", Weight = " << items[i].weight << endl;
     }
     cout << endl;
-
     for (int i = 0; i < n && capacity > 0; i++)
     {
         // If the item can be added fully
@@ -66,7 +65,6 @@ double fractionalKnapsack(Item items[], int n, int capacity)
             capacity = 0;
         }
     }
-
     return finalValue;
 }
 

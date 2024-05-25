@@ -24,7 +24,7 @@ void heapSort(int a[],int n){
         heapify(a,i,0);
     }
 }
-void printHeap(int a[], int n) {
+/*void printHeap(int a[], int n) {
     int level = 0;
     int elements = 0;
     int next_level_elements = 1;
@@ -40,6 +40,13 @@ void printHeap(int a[], int n) {
         }
     }
     cout << endl;
+}*/
+void printHeap(int arr[],int n){
+    //cout<<"The sorted array is: "<<endl;
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
 }
 int main(){
     int n;

@@ -5,10 +5,10 @@ int pivot(int a[],int left,int right){
     int i=left;
     int j= right;
     while(i<j){
-        while(i<=right && i<=pivot){
+        while(i<=right && a[i]<=pivot){
             i++;
         }
-        while(j>=left && j>pivot){
+        while(j>=left && a[j]>pivot){
             j--;
         }
         if(i<j)
@@ -22,7 +22,7 @@ void quickSort(int a[],int left,int right){
         int partition=pivot(a,left,right);
         cout<<"PIVOT: "<<a[partition]<<endl;
         cout<<"Sub Arrays: ";
-        for(int i=left;i<right;i++){
+        for(int i=left;i<=right;i++){
             cout<<a[i]<<"--->";
         }
         cout<<endl;

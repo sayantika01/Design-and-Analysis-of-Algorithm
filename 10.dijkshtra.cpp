@@ -15,7 +15,6 @@ int minDistance(int dist[], bool visited[], int vertices) {
             min_index = v;
         }
     }
-
     return min_index;
 }
 
